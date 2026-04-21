@@ -29,10 +29,9 @@ export default function Hero() {
               {personalInfo.tagline}
             </p>
 
-            <p className="text-gray-500 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
+            <p className="text-gray-500 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8 text-justify">
               {personalInfo.overview}
             </p>
-
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-8">
               <a

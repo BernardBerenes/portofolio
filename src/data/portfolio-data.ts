@@ -3,8 +3,7 @@ import type { PersonalInfo, Experience, Project } from '../types';
 export const personalInfo: PersonalInfo = {
   name: 'Bernard Bereness',
   tagline: 'Software Engineer & Back End Developer',
-  overview:
-    'Passionate software engineer with expertise in building modern web applications. I love crafting clean, performant, and user-friendly digital experiences using cutting-edge technologies. Always eager to learn, grow, and contribute to impactful projects.',
+  overview: 'I am a Computer Science graduate from Bina Nusantara University (2026) who is highly curious about technology and driven to continuously learn and improve. I am eager to explore new advancements, enhance my technical expertise, and develop my potential to contribute meaningfully in the tech industry.',
   photoUrl: '/profile.jpg',
   cvUrl: '/CV.pdf',
   email: import.meta.env.VITE_EMAIL,

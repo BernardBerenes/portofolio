@@ -21,9 +21,11 @@ export default function Footer() {
           {/* Contact buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href={`mailto:${personalInfo.email}`}
+              href={`https://mail.google.com/mail/?view=cm&to=${personalInfo.email}`}
               id="contact-email-btn"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-xl font-semibold text-sm shadow-lg shadow-primary-600/25 hover:bg-primary-700 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -70,9 +72,11 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href={`mailto:${personalInfo.email}`}
+            href={`https://mail.google.com/mail/?view=cm&to=${personalInfo.email}`}
             className="p-3 rounded-xl bg-white border border-gray-200 text-gray-500 hover:bg-primary-600 hover:border-primary-600 hover:text-white transition-all duration-200 hover:-translate-y-0.5 shadow-sm"
             aria-label="Email"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
