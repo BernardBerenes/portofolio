@@ -96,6 +96,13 @@ export const organizationExperience: Experience[] = [
 
 export const projects: Project[] = [
   {
+    name: 'Storely — Inventory Management',
+    githubUrl: 'https://github.com/BernardBerenes/storely-web',
+    images: ['/projects/storely/1.png', '/projects/storely/2.png', '/projects/storely/3.png'],
+    techStack: ['Golang', 'Go Fiber', 'React', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'REST API'],
+    description: 'A modern inventory management system for tracking products, managing stock levels, and monitoring transactions.'
+  },
+  {
     name: 'StockFlow — Inventory Management',
     githubUrl: 'https://github.com/BernardBerenes/StockFlow-UI',
     images: ['/projects/stockflow/1.png', '/projects/stockflow/2.png', '/projects/stockflow/3.png'],
