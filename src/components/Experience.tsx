@@ -84,7 +84,7 @@ export default function Experience() {
               className={`px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 ${
                 activeTab === 'work'
                   ? 'bg-white text-primary-600 shadow-sm'
-                  : 'text-gray-500 hover:text-gray-700'
+                  : 'text-gray-500 hover:text-gray-700 cursor-pointer'
               }`}
             >
               <span className="flex items-center gap-2">
@@ -100,7 +100,7 @@ export default function Experience() {
               className={`px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 ${
                 activeTab === 'organization'
                   ? 'bg-white text-primary-600 shadow-sm'
-                  : 'text-gray-500 hover:text-gray-700'
+                  : 'text-gray-500 hover:text-gray-700 cursor-pointer'
               }`}
             >
               <span className="flex items-center gap-2">
