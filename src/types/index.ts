@@ -16,6 +16,7 @@ export interface Experience {
   startDate: string;
   endDate: string;
   description: string[];
+  skills?: string[];
 }
 
 export interface Project {

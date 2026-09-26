@@ -2,7 +2,7 @@ import type { PersonalInfo, Experience, Project } from '../types';
 
 export const personalInfo: PersonalInfo = {
   name: 'Bernard Bereness',
-  tagline: 'Software Engineer & Back End Developer',
+  tagline: 'Software Engineer & Backend Developer',
   overview: 'I am a Computer Science graduate from Bina Nusantara University (2026) who is highly curious about technology and driven to continuously learn and improve. I am eager to explore new advancements, enhance my technical expertise, and develop my potential to contribute meaningfully in the tech industry.',
   photoUrl: '/profile.jpg',
   cvUrl: '/CV.pdf',
@@ -12,6 +12,20 @@ export const personalInfo: PersonalInfo = {
 };
 
 export const workExperience: Experience[] = [
+  {
+    role: 'Backend Developer | Full Time',
+    company: 'PT Bank Rakyat Indonesia (BRI)',
+    location: 'Central Jakarta, Indonesia',
+    startDate: '07/2026',
+    endDate: 'Now',
+    description: [
+      'Designed, developed, and maintained 8+ REST API endpoints using PHP and Laravel Lumen to support complex business workflows, including data validation, inquiry management, approval processes, and inter service communication.',
+      'Maintained and managed 8+ MySQL database tables, including schema changes, migrations, relationships, and indexing.',
+      'Collaborated with 10+ cross functional team members, including System Analysis Design, Frontend Developers, QA Testers, Principals, and surrounding teams to develop and deliver application features.',
+      'Developed and maintained features across 2+ microservices to support application business processes.'
+    ],
+    skills: ['Laravel Lumen', 'MySQL', 'REST API', 'Microservices', 'Jira', 'Bamboo', 'Bitbucket', 'Confluence', 'SonarQube', 'Rancher'],
+  },
   {
     role: 'Backend Developer | Internship',
     company: 'Time International',
@@ -24,7 +38,8 @@ export const workExperience: Experience[] = [
       'Actively participated in 2+ knowledge sharing sessions to contribute insights and foster collaboration.',
       'Collaborated with 8+ Information Technology and Digital team members to deliver impactful solutions.',
       'Contributed to the development of 5+ mailing modules, including email automation and template management.'
-    ]
+    ],
+    skills: ['PHP', 'Laravel', 'MySQL', 'REST API'],
   },
   {
     role: 'Software Engineer | Internship',
@@ -41,6 +56,7 @@ export const workExperience: Experience[] = [
       'Collaborated with the IT Technology Team to deploy Kubernetes for 5 mission-critical applications, enhancing container orchestration and scalability.',
       'Designed and implemented Redis on Kubernetes, reducing database latency by 30% and improving system reliability.'
     ],
+    skills: ['Kubernetes', 'Redis', 'Datadog', 'New Relic', 'Azure Media Services'],
   },
   {
     role: 'Praetorian | Part Time',
@@ -49,10 +65,11 @@ export const workExperience: Experience[] = [
     startDate: '11/2023',
     endDate: '03/2024',
     description: [
-      'Conducted 2 weekly training sessions, improving the back-end development skills of 50+ members with a focus on the Laravel framework.',
-      'Supervised and guided 20+ participants in the successful completion of a final project on back-end development selection, ensuring high-quality deliverables.',
+      'Conducted 2 weekly training sessions, improving the backend development skills of 50+ members with a focus on the Laravel framework.',
+      'Supervised and guided 20+ participants in the successful completion of a final project on backend development selection, ensuring high-quality deliverables.',
       'Delivered 8+ comprehensive lessons covering Laravel topics such as architecture, CRUD operations, sessions, middleware, authentication, and authorization, tailored to meet the needs of BNCC members.'
     ],
+    skills: ['Laravel', 'PHP', 'Authentication & Authorization', 'Backend Development'],
   },
 ];
 
@@ -88,13 +105,20 @@ export const organizationExperience: Experience[] = [
     endDate: '11/2023',
     description: [
       'Participated in 10+ weekly bootcamp sessions organized by the Praetorian division, enhancing backend development skills with a focus on best practices, modern tools, and hands-on projects for scalable server-side applications.',
-      'Collaborated with peers in 13 discussions, sharing knowledge and exploring innovative back-end solutions.',
-      'Completed 2 major projects (mid-term and final), applying learned concepts to design and implement efficient back-end solutions.'
+      'Collaborated with peers in 13 discussions, sharing knowledge and exploring innovative backend solutions.',
+      'Completed 2 major projects (mid-term and final), applying learned concepts to design and implement efficient backend solutions.'
     ],
   },
 ];
 
 export const projects: Project[] = [
+  {
+    name: 'SupplyHub — POS Management',
+    githubUrl: 'https://github.com/BernardBerenes/SupplyHub-FE',
+    images: ['/projects/supplyhub/1.png', '/projects/supplyhub/2.png', '/projects/supplyhub/3.png'],
+    techStack: ['Golang', 'Go Fiber', 'React', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'REST API'],
+    description: 'A simple point of sale (POS) management system for handling product sales, stock supply, and transactions.'
+  },
   {
     name: 'Storely — Inventory Management',
     githubUrl: 'https://github.com/BernardBerenes/storely-web',

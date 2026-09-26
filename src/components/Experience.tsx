@@ -49,6 +49,19 @@ function TimelineItem({ item, index }: { item: ExperienceType; index: number }) 
             <li key={i}>{desc}</li>
           ))}
         </ul>
+
+        {item.skills && item.skills.length > 0 && (
+          <div className="flex flex-wrap gap-2 mt-4">
+            {item.skills.map((skill) => (
+              <span
+                key={skill}
+                className="px-2.5 py-1 bg-primary-50 text-primary-600 text-xs font-medium rounded-lg border border-primary-100"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

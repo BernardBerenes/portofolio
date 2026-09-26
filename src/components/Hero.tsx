@@ -1,6 +1,22 @@
+import { useEffect, useState } from 'react';
 import { personalInfo } from '../data/portfolio-data';
+import { resolveCvUrl } from '../lib/cv';
 
 export default function Hero() {
+  const [cvUrl, setCvUrl] = useState(personalInfo.cvUrl);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    resolveCvUrl().then((url) => {
+      if (!cancelled) setCvUrl(url);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   return (
     <section
       id="about"
@@ -35,7 +51,7 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-8">
               <a
-                href={personalInfo.cvUrl}
+                href={cvUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 id="btn-view-cv"
